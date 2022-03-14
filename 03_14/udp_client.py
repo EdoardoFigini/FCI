@@ -16,5 +16,7 @@ def main():
     
     print(modifiedMsg.decode('utf-8'))
 
+    clientSocket.close()
+
 if __name__ == '__main__':
     main()

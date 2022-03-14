@@ -12,7 +12,9 @@ def main():
         print(f'Received connection form {clientAddress[0]}:{clientAddress[1]}')
         msg = msg.decode('utf-8')
         
-        
+        if (int(msg) <= 2):
+            return
+
         primo=True
         for i in range(2, int(msg)):
             if(int(msg)%i==0):

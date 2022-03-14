@@ -1,5 +1,6 @@
 02_28/Durante-Lab Scripting con Python.pdf
-03_14/.*.swp
+*/.*.swp
+.*.swp
 03_14/prova.txt
 
 dirlist.sh

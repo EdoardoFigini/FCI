@@ -9,6 +9,7 @@ def main():
     print(f'Server listening on port {serverPort}...')
     while True:
         msg, clientAddress = serverSocket.recvfrom(2048)
+        print(f'Received connection form {clientAddress[0]}:{clientAddress[1]}')
         msg = msg.decode('utf-8')
         modifiedMsg = msg.upper()
         

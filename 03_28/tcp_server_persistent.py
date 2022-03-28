@@ -19,7 +19,7 @@ def main():
         msg = connectionSocket.recv(1024)
         msg = msg.decode('utf-8')
         
-        print(f'|__ Recieved Message "{msg}"')
+        print(f' |__ Recieved Message "{msg}"')
 
         if(msg == '.'):
           print('[*] Client closed the connection')

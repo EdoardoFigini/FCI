@@ -11,6 +11,8 @@ def main():
     clientSocket.connect((serverName, serverPort))
   except:
     print('[!] Timeout error')
+    return
+
 
   while True:
     #msg = input('Enter message: ')

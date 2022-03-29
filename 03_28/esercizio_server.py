@@ -24,10 +24,10 @@ def main():
 
         n = n+1
 
-      print(f' |__ Recieved {n} messages')
+      print(f' \u221F  Recieved {n} messages')
       connectionSocket.close()
         
-      print('[*] client closed the connection')
+      print('[*] Client closed the connection')
     except KeyboardInterrupt:
       print(f'\n[!] Server Closed')
       break;

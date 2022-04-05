@@ -15,16 +15,13 @@ def main():
 
       print(f'[+] Received Connection from: {clientAddress[0]}:{clientAddress[1]}')
       
-      n=0
       while True:
-        msg = connectionSocket.recv(1024)
-       
-        if(msg.decode('utf-8') == '.'):
+        msg = connectionSocket.recv(1024).decode('utf-8')
+        print(f' \u221F  Recieved {len(msg)} messages')
+
+        if(msg == '.'):
           break
 
-        n = n+1
-
-      print(f' \u221F  Recieved {n} messages')
       connectionSocket.close()
         
       print('[*] Client closed the connection')

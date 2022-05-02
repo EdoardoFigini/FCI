@@ -8,76 +8,76 @@ Comandi del CLI visti
 
 - HELP page &rarr; lista dei comandi disponibili
 
-        > ?
+    > ?
 
 - Visualizzare le interfacce 
 
-        > show interfaces
+    > show interfaces
 
 - Privilegi di root
 
-        > enable
+    > enable
 
 - Salvare la configurazione corrente allo startup
 
-        # copy running-config startup-config
+    # copy running-config startup-config
 
 - Configurare il Router
 
-        # configure terminal
+    # configure terminal
         
-        # conf t
+    # conf t
 
 - Cambiare il nome del Router
 
-        # hostname <new_name>
+    # hostname <new_name>
 
 - Visualizza configurazione corrente
 
-        # show run
+    # show run
         
-        # show running-config
+    # show running-config
 
 - Riavvia Router
 
-        > reload
+    > reload
 
 - Visualizzare tabella di routing
 
-        > show ip route
+    > show ip route
 
 - Imposta password per root
 
-        # enable secret <passw>
+    # enable secret <passw>
 
 - Rimuovere password
 
-        # no enable secret
+    # no enable secret
 
 - Configurare un'interfaccia
 
-        # interface interface_name
+    # interface interface_name
 
 - Accendere un interfaccia
 
-        # no shutdown
+    # no shutdown
 
 - Configurare indirizzo IP
 
-        # ip address <ip_address> <subnet_mask>
+    # ip address <ip_address> <subnet_mask>
 
 - Settare il clock dell'interfaccia
 
-        # clock rate <frequency> 
+    # clock rate <frequency> 
 
 - Settare una password per connessione in remoto (Console)
         
-        # console line 0
-        # password <passw>
-        # login
+    # console line 0
+    # password <passw>
+    # login
 
 - Impostare il Router per accesso remoto via ethernet
 
-        # line vty 0 4
-        # password <passw>
-        # login
+    # line vty 0 4
+    # password <passw>
+    # login

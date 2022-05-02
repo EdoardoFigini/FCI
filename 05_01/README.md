@@ -59,6 +59,10 @@ Comandi del CLI visti
 
       # interface interface_name
 
+- Aggiungere descrizione ad un interfaccia
+
+      # description <description>
+
 - Accendere un interfaccia
 
       # no shutdown

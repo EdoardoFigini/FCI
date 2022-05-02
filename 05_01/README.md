@@ -75,3 +75,9 @@ Comandi del CLI visti
         # console line 0
         # password <passw>
         # login
+
+- Impostare il Router per accesso remoto via ethernet
+
+        # line vty 0 4
+        # password <passw>
+        # login

@@ -6,7 +6,7 @@ Laboratorio di introduzione su Cisco Packet Tracer.
 
 Comandi del CLI visti
 
-- HELP page &rarr lista dei comandi disponibili
+- HELP page &rarr; lista dei comandi disponibili
 ```console
 > ?
 ```
@@ -86,3 +86,9 @@ Comandi del CLI visti
 ```console
 # clock rate <frequency> 
 ```
+
+- Settare una password per connessione in remoto (Console)
+        
+        # console line 0
+        # password <passw>
+        # login

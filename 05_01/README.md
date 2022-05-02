@@ -6,11 +6,12 @@ Laboratorio di introduzione su Cisco Packet Tracer.
 
 Comandi del CLI visti
 
-HELP page -> lista dei comandi disponibili
+- HELP page -> lista dei comandi disponibili
 ```console
 > ?
 ```
 
+- Visualizzare le interfacce 
 ```console
 > show interfaces
 ```

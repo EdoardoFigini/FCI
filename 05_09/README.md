@@ -19,6 +19,8 @@ Routing Statico e protocolli di routing
 
       # ip route <dest_ip> <dest_subnet> <next_hop>
 
+  Per configurare il routing statico bisogna specificare al router che su interfaccia (Next Hop) mandare i pacchetti destinati alla rete identificata da dest\_ip   
+
 - Configurare protocollo RIP
       
       # router rip

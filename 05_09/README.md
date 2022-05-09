@@ -40,3 +40,5 @@ Routing Statico e protocolli di routing
 - Impostare interfaccia passiva
 
       # passive-interface <interface_name>
+
+  `interface_name` include sia il nome dell'interfaccia sia la porta (es. `FastEthernet0/1`)

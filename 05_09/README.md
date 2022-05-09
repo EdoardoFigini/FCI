@@ -41,4 +41,4 @@ Routing Statico e protocolli di routing
 
       # passive-interface <interface_name>
 
-  `interface_name` include sia il nome dell'interfaccia sia la porta (es. `FastEthernet0/1`)
+  `interface_name` include sia il nome dell'interfaccia sia `porta/slot` (es. `FastEthernet0/1`)

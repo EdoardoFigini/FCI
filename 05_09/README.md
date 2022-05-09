@@ -23,10 +23,16 @@ Routing Statico e protocolli di routing
       
       # router rip
 
-- Configurare versione di rip
+- Configurare versione di RIP
 
       # version <version>
 
 - Configurare su quali reti abilitare RIP
 
       # network <ip_address>
+
+- Mostrare configurazione
+
+      # show ip protocols
+
+

@@ -1,4 +1,4 @@
-# Laboratorio 1 Maggio 2022
+# Laboratorio 2 Maggio 2022
 
 ## Cisco Packet Tracer
 

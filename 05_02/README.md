@@ -41,7 +41,7 @@ Comandi del CLI visti
 
 - Riavvia Router
 
-      > reload
+      # reload
 
 - Visualizzare tabella di routing
 

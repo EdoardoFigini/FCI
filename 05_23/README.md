@@ -7,9 +7,10 @@
 - Configurare NAT su un Router
         
         # conf-t
-        # interface <interface_name>
+        # interface <inside_interface_name>
         # ip nat inside
 
+        # interface <outside_interface_name>
         # ip nat outside
 
 - Creare lista di indirizzi per il NAT
@@ -26,6 +27,21 @@
 
 ### PORT FORWARDING
 
+- Associare staticamente esterno a interno
 
+        # conf-t
+        # ip nat inside source static tcp <private_ip> <port> <public_ip> <public_port>
+
+- Configurazione completa 
+
+        > enable
+        # conf-t
+        # interface <inside_interface_name>
+        # ip nat inside
+        # exit
+        # interface <outside_interface_name>
+        # ip nat outside
+        # exit
+        # ip nat inside source static tcp <private_ip> <port> <public_ip> <public_port>
 
 ### DHCP

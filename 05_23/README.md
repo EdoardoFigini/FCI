@@ -7,7 +7,7 @@
 
 - Configurare NAT su un Router
         
-        # conf-t
+        # conf t
         # interface <inside_interface_name>
         # ip nat inside
 
@@ -16,14 +16,14 @@
 
 - Creare lista di indirizzi per il NAT
 
-        # conf-t
+        # conf t
         # access-list <list_index> permit <ip_addr> <wildcard>
     
     `wildcard` è il reciproco della `subnet_mask`
 
 - Associare NAT alla lista
 
-        # conf-t
+        # conf t
         # ip nat inside source list <list_index> interface <outside_interface_name> overload
 
 ### PORT FORWARDING
@@ -31,21 +31,21 @@
 
 - Associare staticamente esterno a interno
 
-        # conf-t
+        # conf t
         # ip nat inside source static tcp <private_ip> <port> <public_ip> <public_port>
 
 - Configurazione completa 
 
         > enable
-        # conf-t
+        # conf t
         # interface <inside_interface_name>
         # ip nat inside
         # exit
         # interface <outside_interface_name>
         # ip nat outside
         # exit
-        # ip nat inside source list <list_index> interface <outside_interface_name> overload
         # access-list <list_index> permit <ip_addr> <wildcard>
+        # ip nat inside source list <list_index> interface <outside_interface_name> overload
         # ip nat inside source static tcp <private_ip> <port> <public_ip> <public_port>
 
 ### DHCP

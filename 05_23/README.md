@@ -3,6 +3,7 @@
 ## Cisco Packet Tracer
 
 ### NAT
+`esercizio5.5.pkt`
 
 - Configurare NAT su un Router
         
@@ -26,6 +27,7 @@
         # ip nat inside source list <list_index> interface <outside_interface_name> overload
 
 ### PORT FORWARDING
+`esercizio6.1.pkt`
 
 - Associare staticamente esterno a interno
 
@@ -42,6 +44,8 @@
         # interface <outside_interface_name>
         # ip nat outside
         # exit
+        # ip nat inside source list <list_index> interface <outside_interface_name> overload
+        # access-list <list_index> permit <ip_addr> <wildcard>
         # ip nat inside source static tcp <private_ip> <port> <public_ip> <public_port>
 
 ### DHCP

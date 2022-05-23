@@ -3,7 +3,7 @@
 ## Cisco Packet Tracer
 
 ### NAT
-`esercizio5.5.pkt`
+[`esercizio5.5.pkt`](./esercizio5.5.pkt)
 
 - Configurare NAT su un Router
         
@@ -27,7 +27,7 @@
         # ip nat inside source list <list_index> interface <outside_interface_name> overload
 
 ### PORT FORWARDING
-`esercizio6.1.pkt`
+[`esercizio6.1.pkt`](./esercizio6.1.pkt)
 
 - Associare staticamente esterno a interno
 
@@ -49,3 +49,20 @@
         # ip nat inside source static tcp <private_ip> <port> <public_ip> <public_port>
 
 ### DHCP
+
+- Creare un pool di indirizzi
+
+        # conf t
+        # ip dhcp pool <pool_name>
+
+- Assegnare il default getaway 
+
+        # default-router <default_getaway>
+
+- Definire la rete a cui appartengono gli indirizzi
+
+        # network <network_ip_addr> <netmask>
+
+- Escludere indirizzi dal pool
+
+        # ip dhcp excluded-address <ip_addr>

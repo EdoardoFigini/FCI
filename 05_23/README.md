@@ -65,4 +65,5 @@
 
 - Escludere indirizzi dal pool
 
+        # conf t
         # ip dhcp excluded-address <ip_addr>

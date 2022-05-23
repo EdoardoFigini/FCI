@@ -49,6 +49,7 @@
         # ip nat inside source static tcp <private_ip> <port> <public_ip> <public_port>
 
 ### DHCP
+[`esercizio6.2.pkt`](./esercizio6.2.pkt)
 
 - Creare un pool di indirizzi
 

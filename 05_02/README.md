@@ -41,7 +41,7 @@ Comandi del CLI visti
 
 - Riavvia Router
 
-      > reload
+      # reload
 
 - Visualizzare tabella di routing
 
@@ -77,7 +77,7 @@ Comandi del CLI visti
 
 - Settare una password per connessione in remoto (Console)
         
-      # console line 0
+      # console 0
       # password <passw>
       # login
 

@@ -56,9 +56,9 @@
         # conf t
         # ip dhcp pool <pool_name>
 
-- Assegnare il default getaway 
+- Assegnare il default gateaway 
 
-        # default-router <default_getaway>
+        # default-router <default_gateaway>
 
 - Definire la rete a cui appartengono gli indirizzi
 
